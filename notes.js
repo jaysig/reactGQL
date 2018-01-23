@@ -13,3 +13,5 @@ Query {
     }
   }
 }
+
+GraphQL needs the root query as an entry point 'for' retrieving Data
