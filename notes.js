@@ -15,3 +15,6 @@ Query {
 }
 
 GraphQL needs the root query as an entry point 'for' retrieving Data
+
+
+You resolve a relationship of data by using axios get within a resolve function
