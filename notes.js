@@ -33,3 +33,11 @@ fragment companyDetails on Company { //More on the front end
   name
   description
 }
+
+//Mutations
+mutation {
+  addUser(firstName: "John", age: 26) {
+    id
+    firstName
+  }
+}
