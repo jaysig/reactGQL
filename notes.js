@@ -43,3 +43,13 @@ mutation {
 }
 //GraphQL Clients
 Lokka, Apollo, Relay --- from simple to complex
+
+//Mutation and Query
+export default graphql(mutation)(
+  graphql(query)(SongList)
+);
+
+// Use prop in a GQL query
+export default graphql(fetchSong, {
+  options: (props) => { return { variables: { id: props.params.id } }; }
+})(SongDetail);
