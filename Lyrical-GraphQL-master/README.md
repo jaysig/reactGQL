@@ -1,2 +1,2 @@
 # Lyrical-GraphQL
-React and GraphQL Project
+React and GraphQL Demo Project
