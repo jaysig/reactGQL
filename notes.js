@@ -58,3 +58,14 @@ export default graphql(fetchSong, {
 const client = new ApolloClient({
   dataIdFromObject: o => o.id
 });
+
+//optimisticResponse to update data instantly before it comes back from the db
+// This info comes from the network request tab. Video 72
+optimisticResponse: {
+  __typename: 'Mutation',
+  likeLyric: {
+    id,
+    __typename: 'LyricType',
+    likes: likes + 1
+  }
+}
