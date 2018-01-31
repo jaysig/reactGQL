@@ -53,3 +53,8 @@ export default graphql(mutation)(
 export default graphql(fetchSong, {
   options: (props) => { return { variables: { id: props.params.id } }; }
 })(SongDetail);
+
+//Bind data with apollo and give everything an id
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id
+});

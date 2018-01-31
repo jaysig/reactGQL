@@ -44,5 +44,5 @@ const mutation = gql`
       }
     }
   }
-`
+`;
 export default graphql(mutation)(LyricCreate);
