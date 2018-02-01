@@ -69,3 +69,6 @@ optimisticResponse: {
     likes: likes + 1
   }
 }
+
+//Express Auth boilerplate
+https://github.com/StephenGrider/auth-graphql-starter
