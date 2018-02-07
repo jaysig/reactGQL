@@ -72,3 +72,16 @@ optimisticResponse: {
 
 //Express Auth boilerplate
 https://github.com/StephenGrider/auth-graphql-starter
+
+// Add cookies to a GQL request
+const networkInterface = createNetworkInterface({
+  uri: '/graphql',
+  opts: { //adds cookies to network requests
+    credentials: 'same-origin'
+  }
+});
+
+const client = new ApolloClient({
+  networkInterface,
+  dataIdFromObject: o => o.id
+});
